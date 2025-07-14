@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bijay Dangal | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <h1>Bijay Dangal</h1>
+      <p>Web Developer | JavaScript Enthusiast | Learner</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- About Me Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm <strong>Bijay Dangal</strong>, an aspiring front-end developer with a strong interest in building clean, interactive, and user-friendly websites. I specialize in HTML, CSS, and JavaScript and enjoy learning new technologies that enhance the user experience. My goal is to contribute to meaningful projects while continuously improving my skills in the field of web development.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>Responsive Landing Page</h3>
+          <p>A fully responsive website landing page with smooth scrolling and sectioned content. Built using HTML, CSS Grid, and vanilla JavaScript.</p>
+        </div>
+        <div class="project-card">
+          <h3>JavaScript To-Do App</h3>
+          <p>A task management tool using JavaScript fundamentals—features include add/remove tasks, local storage, and completion toggle.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>If you'd like to get in touch, feel free to drop me a message or connect via email.</p>
+      <p>Email: <a href="mailto:bijay.dangal53@gmail.com">bijay.dangal53@gmail.com</a></p>
+      <input type="text" id="visitorName" placeholder="Enter your name" />
+      <button onclick="greetVisitor()">Say Hello</button>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Bijay Dangal. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function greetVisitor() {
+      const nameInput = document.getElementById("visitorName").value.trim();
+      const userName = nameInput || "Guest";
+      alert("Thank you for visiting, " + userName + "! Feel free to reach out.");
+    }
+  </script>
+</body>
+</html>
